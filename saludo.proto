@@ -1,0 +1,17 @@
+// Contrato del servicio: cliente y servidor lo comparten.
+// Sesion 12 - Protocol Buffers
+syntax = "proto3";
+
+package saludo;
+
+service Saludador {
+  rpc SaludarUno (SaludoRequest) returns (SaludoResponse);
+}
+
+message SaludoRequest {
+  string nombre = 1;
+}
+
+message SaludoResponse {
+  string mensaje = 1;
+}
