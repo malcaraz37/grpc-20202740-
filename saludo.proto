@@ -10,6 +10,7 @@ service Saludador {
 
 message SaludoRequest {
   string nombre = 1;
+  string matricula = 2;
 }
 
 message SaludoResponse {
